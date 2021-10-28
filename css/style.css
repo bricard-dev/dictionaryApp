@@ -17,6 +17,10 @@ body {
   background-color: var(--purple);
 }
 
+button {
+  cursor: pointer;
+}
+
 .container {
   background-color: #fff;
   width: 90vmin;
