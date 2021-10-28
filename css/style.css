@@ -1,5 +1,6 @@
 :root {
   --purple: #ae9cff;
+  --dark-purple: #575a7b;
 }
 
 * {
@@ -82,4 +83,16 @@ body {
   color: #b3b6d4;
   margin: 5px 0 20px 0;
   font-size: 14px;
+}
+
+.word-meaning {
+  color: var(--dark-purple);
+}
+
+.word-example {
+  color: var(--dark-purple);
+  font-style: italic;
+  border-left: 5px solid var(--purple);
+  padding-left: 20px;
+  margin-top: 30px;
 }
