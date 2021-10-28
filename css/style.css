@@ -1,3 +1,7 @@
+:root {
+  --purple: #ae9cff;
+}
+
 * {
   padding: 0;
   margin: 0;
@@ -9,7 +13,7 @@
 }
 
 body {
-  background-color: #ae9cff;
+  background-color: var(--purple);
 }
 
 .container {
@@ -22,4 +26,29 @@ body {
   padding: 80px 50px;
   border-radius: 10px;
   box-shadow: 0 20px 40px rgba(38, 33, 61, 0.2);
+}
+
+.search-box {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.search-box input {
+  padding: 5px;
+  width: 70%;
+  border: none;
+  outline: none;
+  border-bottom: 3px solid var(--purple);
+  font-size: 16px;
+}
+
+.search-box button {
+  padding: 15px 0;
+  width: 25%;
+  background-color: var(--purple);
+  border: none;
+  outline: none;
+  color: #fff;
+  border-radius: 5px;
 }
