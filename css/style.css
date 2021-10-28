@@ -52,3 +52,26 @@ body {
   color: #fff;
   border-radius: 5px;
 }
+
+.result {
+  position: relative;
+}
+
+.result h3 {
+  font-size: 30px;
+  color: #1f194c;
+}
+
+.result .word {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 80px;
+}
+
+.result button {
+  background-color: transparent;
+  color: var(--purple);
+  border: none;
+  outline: none;
+  font-size: 18px;
+}
