@@ -3,12 +3,17 @@ const result = document.getElementById("result");
 const sound = document.getElementById("sound");
 const btn = document.getElementById("search-btn");
 
+document.addEventListener("keyup", (e) => {
+  if (e.keyCode === 13) {
+    btn.click();
+  }
+});
+
 btn.addEventListener("click", () => {
   let inpWord = document.getElementById("inp-word").value;
   fetch(`${url}${inpWord}`)
     .then((response) => response.json())
     .then((data) => {
-      console.log(data);
       result.innerHTML = `
       <div class="word">
         <h3>${data[0].word}</h3>
